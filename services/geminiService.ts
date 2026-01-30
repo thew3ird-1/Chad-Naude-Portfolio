@@ -6,12 +6,9 @@ let genAI: GoogleGenAI | null = null;
 
 const getGenAI = (): GoogleGenAI => {
   if (!genAI) {
-    const apiKey = process.env.API_KEY;
-    if (!apiKey) {
-      console.warn("API_KEY not found in environment variables. Chat features will be disabled.");
-      throw new Error("API Key missing");
-    }
-    genAI = new GoogleGenAI({ apiKey });
+    // The API key must be obtained exclusively from the environment variable process.env.API_KEY.
+    // Assume this variable is pre-configured, valid, and accessible.
+    genAI = new GoogleGenAI({ apiKey: process.env.API_KEY });
   }
   return genAI;
 };
