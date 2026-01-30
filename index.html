@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Chad Naude | Software Engineer & Junior Tester</title>
+    <meta name="title" content="Chad Naude | Software Engineer & Junior Tester">
+    <meta name="description" content="Portfolio of Chad Naude. Bridging the gap between Software Engineering and Quality Assurance with expertise in React, TypeScript, and rigorous testing methodologies.">
+    <meta name="keywords" content="Software Engineer, Junior Tester, QA, React, TypeScript, Portfolio, Chad Naude">
+    <meta name="author" content="Chad Naude">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chad-naude-portfolio.vercel.app/">
+    <meta property="og:title" content="Chad Naude | Software Engineer & Junior Tester">
+    <meta property="og:description" content="I engineer robust, performant applications, combining development expertise with rigorous quality assurance. Check out my projects and resume.">
+    <meta property="og:image" content="https://i.im.ge/2026/01/28/Ge5CPa.4339.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chad-naude-portfolio.vercel.app/">
+    <meta property="twitter:title" content="Chad Naude | Software Engineer & Junior Tester">
+    <meta property="twitter:description" content="I engineer robust, performant applications, combining development expertise with rigorous quality assurance.">
+    <meta property="twitter:image" content="https://i.im.ge/2026/01/28/Ge5CPa.4339.jpeg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4f46e5', // Indigo 600
+              secondary: '#0f172a', // Slate 900
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem; /* Offset for fixed navbar */
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom scrollbar for chat */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-950 text-slate-200 antialiased selection:bg-purple-500 selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
