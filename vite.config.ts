@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     define: {
-      // Safely replace process.env.API_KEY. Defaults to empty string if undefined to prevent build errors.
+      // Safely replace process.env.API_KEY. Defaults to empty string if undefined.
       'process.env.API_KEY': JSON.stringify(env.API_KEY || ''),
       // Polyfill process.env to an empty object
       'process.env': JSON.stringify({})
