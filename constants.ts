@@ -91,11 +91,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     url: "https://www.linkedin.com/in/chad-naude-ba43142b7/",
     icon: "linkedin"
   },
-  {
-    platform: "GitLab",
-    url: "https://gitlab.wethinkco.de/",
-    icon: "gitlab"
-  },
+  
   {
     platform: "Email",
     url: `mailto:${USER_PROFILE.email}`,
